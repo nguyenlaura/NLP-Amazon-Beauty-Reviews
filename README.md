@@ -108,8 +108,6 @@ Precision defines how accurate we are through the number of true perfects over f
 
 Recall is the true perfect counts over the number of true perfects plus false perfects.
 
-In a situation of review text data, precision is prefered over recall because often, recall is used in cases where one would 
-
 
 #### Logistic Regressoion
 <img src="src/log_regression.png"
