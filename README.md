@@ -55,8 +55,6 @@ Cleaning the data required some light EDA. I discovered 1200 rows of duplicate r
 ### The Average Reviewer
 
 Reviews aggregated by month and then by years. Some patterns we see are that mored reviews are posted in the spring around March, summer around July and Fall around Black Friday and the holiday season.
-![review by month](src/reviews_by_month.png)
-
 
 <img src="src/reviews_by_month.png"
      alt="reviews by month"
@@ -86,6 +84,7 @@ Equally important, I wanted to observe who of our reviewers actually bought the 
 
 ### Top Words
 This is a word cloud representing the most common words in all beauty reviews in this dataset. Words like one, use and product are used most often.
+
 <img src="src/top_200_words.png"
      alt="top 100 words overall review text data"
      style="float: left; margin-right: 10px;" />
