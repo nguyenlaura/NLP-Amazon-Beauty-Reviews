@@ -55,23 +55,21 @@ Cleaning the data required some light EDA. I discovered 1200 rows of duplicate r
 ### The Average Reviewer
 
 Reviews aggregated by month and then by years. Some patterns we see are that mored reviews are posted in the spring around March, summer around July and Fall around Black Friday and the holiday season.
-![review by month](data/reviews_by_month.png)
 
-
-<img src="data/reviews_by_month.png"
+<img src="src/reviews_by_month.png"
      alt="reviews by month"
      style="float: left; margin-right: 10px;" />
 
 Most reviews came in around 2016 -- the review data ends in September 2018 so it’s not complete and looks much lower than what it could be especially since we know that things typically pick up for Amazon for holiday shopping.
 
-<img src="data/reviews_by_year.png"
+<img src="src/reviews_by_year.png"
      alt="reviews by year"
      style="float: left; margin-right: 10px;" />
 
 
 Here we have the distribution of how many ratings are given by their score. 5-stars are given most often and so they will be what we want to determine today. What words tell us that our customer loves our product so that we may recommend these items to others?
 
-<img src="data/ratings_distribution.png"
+<img src="src/ratings_distribution.png"
      alt="ratings distribution"
      style="float: left; margin-right: 10px;" />
 
@@ -79,20 +77,21 @@ Here we have the distribution of how many ratings are given by their score. 5-st
 Equally important, I wanted to observe who of our reviewers actually bought the product they’re reviewing. Both graphs similarly represent that the number of reviews posted gets higher the more a person likes a product. Yet, we notice that 5-star reviews are the highest of the verified buyers. Might this mean that these reviews are more credible? I don’t know -- It’s something to look into as a next steps
 
 
-<img src="data/verified_unverified"
+<img src="src/verified_unverified.png"
      alt="verified or unverified buyer"
      style="float: left; margin-right: 10px;" />
 
 
 ### Top Words
 This is a word cloud representing the most common words in all beauty reviews in this dataset. Words like one, use and product are used most often.
-<img src="data/top_200_words.png"
+
+<img src="src/top_200_words.png"
      alt="top 100 words overall review text data"
      style="float: left; margin-right: 10px;" />
 
 Here these are the top 100 words for Perfect ratings. Users tend to talk more about the product in detail with heavy use of the word love and descriptive words that accentuate how these products affected users.
 
-<img src="data/5_star_words.png"
+<img src="src/5_star_words.png"
      alt="top 100 words for 5-star ratings"
      style="float: left; margin-right: 10px;" />
 
@@ -109,21 +108,19 @@ Precision defines how accurate we are through the number of true perfects over f
 
 Recall is the true perfect counts over the number of true perfects plus false perfects.
 
-In a situation of review text data, precision is prefered over recall because often, recall is used in cases where one would 
-
 
 #### Logistic Regressoion
-<img src="data/log_regression"
+<img src="src/log_regression.png"
      alt="log_regression"
      style="float: left; margin-right: 10px;" />
      
 #### Gradient Boosting
-<img src="data/grad_boost"
+<img src="src/grad_boost.png"
      alt="grad_boost"
      style="float: left; margin-right: 10px;" />
      
 #### Random Forest
-<img src="data/rand_forest"
+<img src="src/rand_forest.png"
      alt="rand_forest"
      style="float: left; margin-right: 10px;" />
 
