@@ -108,17 +108,29 @@ Precision defines how accurate we are through the number of true perfects over f
 
 Recall is the true perfect counts over the number of true perfects plus false perfects.
 
+#### Base Model
+
+The base model is set to predict the "most frequent" result--which in our case is a perfect rating.
+<img src="src/base_model.png"
+     alt="log_regression"
+     style="float: left; margin-right: 10px;" />
+     
+Logistic regression made an attempt to predict five star ratings but didn’t do much better.
 
 #### Logistic Regressoion
 <img src="src/log_regression.png"
      alt="log_regression"
      style="float: left; margin-right: 10px;" />
-     
+
+Hyperparameter tuning allowed gradient boosting to perform much better as opposed to the base model and logistic regression.
+
 #### Gradient Boosting
 <img src="src/grad_boost.png"
      alt="grad_boost"
      style="float: left; margin-right: 10px;" />
-     
+
+Random forest performed the best overall in terms of precision and recall.
+
 #### Random Forest
 <img src="src/rand_forest.png"
      alt="rand_forest"
@@ -126,4 +138,13 @@ Recall is the true perfect counts over the number of true perfects plus false pe
 
 ## Summary <a name="Summary"></a>
 
-Compared to the base model, Gradient Boosting and Random Forest models both performed the best. 
+<img src="src/Base_Log.png"
+     alt="rand_forest"
+     style="float: left; margin-right: 10px;" />
+     
+<img src="src/Grad_Rand.png"
+     alt="rand_forest"
+     style="float: left; margin-right: 10px;" />
+
+
+Ultimately, random forest appears to be the better model as its precision score is higher and  having false negatives is less of a concern--meaning that if we falsely identified a 5-star rating as not perfect, then that would still be acceptable. I was surprised and delighted to see random forest perform so well. I can see why it is often a favorite model. In terms of next steps, I am excited to see how I can utilize the extra features of the data set such as "verified". Though I cannot yet prove it, I hope there is something meaningful in a user's ratings and reviews based on whether or not they are a verified buyer of the product in question. Additionally, I would like to see how to use these ratings to reccommend products to other users of similar tastes.
