@@ -27,7 +27,7 @@ UCSD has provided a [dataset](https://nijianmo.github.io/amazon/index.html) of o
 
 **asin:** String product id.
 
-**style:** Set or dictionary of product style information.
+**style:** Set or dictionary of product style information. 
 
 **reviewerName:** String of username or handle.
 
